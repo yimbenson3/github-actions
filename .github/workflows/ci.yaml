@@ -19,3 +19,11 @@ jobs:
       with:
         java-version: 1.8
 
+    - name: Grant excecut permission for gradlew
+      run: chomd +x gradlew
+    
+    - name: Build with gradle
+      run: ./gradlew build
+
+
+
