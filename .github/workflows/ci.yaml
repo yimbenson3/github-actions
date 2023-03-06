@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ master ]
-  pull_requests:
-    branches: [ master ]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -19,4 +19,3 @@ jobs:
       with:
         java-version: 1.8
 
-        
